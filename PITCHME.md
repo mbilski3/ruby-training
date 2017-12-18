@@ -1,6 +1,10 @@
 # Ruby training
 
-### A GitPitch Presentation Template
+### Ruby and Sinatra for Front End Peeps
+
+---
+
+![Teskst zastępczy](https://ljdchost.com/OpJjQlm.gif "Ready for this?")
 
 ---
 
