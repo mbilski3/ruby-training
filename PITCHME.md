@@ -1,20 +1,12 @@
-# Ruby training
+## Ruby training
 
-### Ruby and Sinatra for Front End Peeps
-
----
-
-![Teskst zastępczy](https://ljdchost.com/OpJjQlm.gif "Ready for this?")
+#### Ruby and Sinatra for Frontend Peeps
 
 ---
 
-## Tips!
+## Ready for this? Thus...
 
-<br>
-
-@fa[arrows gp-tip](Press F to go Fullscreen)
-
-@fa[microphone gp-tip](Press S for Speaker Notes)
+![](https://ljdchost.com/OpJjQlm.gif "Ready for this? Thus...")
 
 ---
 

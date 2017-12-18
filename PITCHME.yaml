@@ -6,8 +6,8 @@
 #
 theme : night
 theme-override : assets/css/PITCHME.css
-logo : assets/image/logo.png
+logo : assets/image/logo.svg
 highlight : atom-one-light
 transition : none
 published : true
-footnote : "GitPitch [ Netflix ] Presentation Template"
+footnote : "Ruby Training | Mateusz Bilski | 2017 | GitPitch [ Netflix ] Presentation Template"
