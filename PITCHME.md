@@ -10,10 +10,10 @@
 
 ---
 
-## Template Features
+## Tabela kontentu
 
-- Code Presenting |
-- Repo Source, Static Blocks, GIST |
+- Jak poprawnie zainstalować i skonfigurować środowisko programisty? |
+- Vagrant - Szybki provisioning i pierwsza appka |
 - Custom CSS Styling |
 - Slideshow Background Image |
 - Slide-specific Background Images |
