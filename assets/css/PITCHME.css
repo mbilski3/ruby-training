@@ -22,7 +22,7 @@ body {
 .reveal pre code {
   font-size: 1.2em;
   line-height: 1.2;
-  max-height: 50vh !important;
+  max-height: 80vh !important;
   opacity: 0.95;
   border-radius: 10px;
 }
@@ -54,4 +54,3 @@ body {
 .gp-contact { font-size : 1.4em; }
 
 .gp-download { margin-left: 10px; }
-
