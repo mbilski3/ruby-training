@@ -1,161 +1,244 @@
-## Netflix Speaker
+## Ruby training
 
-### A GitPitch Presentation Template
-
-Note:
-Welcome to this [GitPitch](https://gitpitch.com)
-presentation template!
-
-You are currently enjoying the speaker notes window,
-a feature available to all online and offline slideshows.
+#### Ruby and Sinatra for Frontend Peeps
 
 ---
 
-## Tips!
+## Ready for this? Thus...
 
-<br>
-
-@fa[arrows gp-tip](Press F to go Fullscreen)
-
-@fa[microphone gp-tip](Press S for Speaker Notes)
-
-Note:
-Get started by telling your audience something cool
-about your product, service, framework, course, etc.
+![](https://ljdchost.com/OpJjQlm.gif "Ready for this? Thus...")
 
 ---
 
-## Template Features
+## Dowiecie się:
 
-- Code Presenting |
-- Repo Source, Static Blocks, GIST |
-- Custom CSS Styling |
-- Slideshow Background Image |
-- Slide-specific Background Images |
-- Custom Logo, TOC, and Footnotes |
+- Jak poprawnie zainstalować i skonfigurować środowisko programisty? |
+- Rvm, gemsets, przełączanie między wersjami |
+- Vagrant - Szybki provisioning i pierwsza appka |
+- Aplikacje rack-based, jak je traktować? |
+- Bundler i Gemfile, co to są? |
+- Jak zrobić sobie MVC w Sinatra? |
 
-Note:
-Keep yourself on track using lists within your speaker notes:
-
-- Key insight.
-- Supporting use case.
-- Time to delve deeper.
-
----?code=src/go/server.go&lang=golang&title=Golang File
-
-@[1,3-6](Present code found within any repo source file.)
-@[8-18](Without ever leaving your slideshow.)
-@[19-28](Using GitPitch code-presenting with (optional) annotations.)
 
 Note:
-Best to keep it simple. Try highlighting just one key message per slide.
+sdvdsvdfvdfv
+---
+
+## Dowiecie się c.d:
+
+- Routing w Sinatra |
+- BaseController - Co powinno się w nim znaleźć? |
+- Layouty, HAML i helpery |
+- Przekazywanie zmiennych do widoków |
+- Formularze i CSRF |
+- Debugowanie |
 
 ---
 
-@title[JavaScript Block]
+#### Mamy goły obraz Ubuntu
 
-<p><span class="slide-title">JavaScript Block</span></p>
+RVM - Ruby Version Manager, narzędzie linii komend do zarządzania wersjami Ruby i Gemów.
 
-```javascript
-// Include http module.
-var http = require("http");
+#### Po co? Przecież mamy apt-get!
 
-// Create the server. Function passed as parameter
-// is called on every request made.
-http.createServer(function (request, response) {
-  // Attach listener on end event.  This event is
-  // called when client sent, awaiting response.
-  request.on("end", function () {
-    // Write headers to the response.
-    // HTTP 200 status, Content-Type text/plain.
-    response.writeHead(200, {
-      'Content-Type': 'text/plain'
-    });
-    // Send data and end response.
-    response.end('Hello HTTP!');
-  });
+- W repozytoriach apt-get jest oczywiście ruby, natomiast wersje nie są już uaktualniane na bieżąco |
+- Co jeśli mamy projekt X który wymaga Ruby 1.9.3 i projekt Y który wymaga 2.4? |
+- Projekt X potrzebuje gema Rails w wersji 3, projekt Y potrzebuje go w wersji 5? |
 
-// Listen on the 8080 port.
-}).listen(8080);
+---
+
+#### RVM
+
+https://rvm.io/
+
+Dodajemy klucze
+```bash
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 ```
 
-@[1,2](You can present code inlined within your slide markdown too.)
-@[9-17](Displayed using code-syntax highlighting just like your IDE.)
-@[19-20](Again, all of this without ever leaving your slideshow.)
+Pobieramy i uruchamiamy skrypt instalacyjny
+```bash
+\curl -sSL https://get.rvm.io | bash -s stable
+```
 
-Note:
-Perhaps it's time for an insightful anecdote to keep your
-audience engaged?
-
----?gist=onetapbeyond/494e0fecaf0d6a2aa2acadfb8eb9d6e8&lang=scala&title=Scala GIST
-
-@[23](You can even present code found within any GitHub GIST.)
-@[41-53](GIST source code is beautifully rendered on any slide.)
-@[57-62](And code-presenting works seamlessly for GIST too, both online and offline.)
-
-Note:
-
-Reinforce key points to drive home your message.
+Instalujemy wybraną wersję
+```bash
+rvm install 2.4.0
+```
 
 ---
 
-## Template Help
+#### RVM - gemsets automat
 
-- [Code Presenting](https://github.com/gitpitch/gitpitch/wiki/Code-Presenting)
-  + [Repo Source](https://github.com/gitpitch/gitpitch/wiki/Code-Delimiter-Slides), [Static Blocks](https://github.com/gitpitch/gitpitch/wiki/Code-Slides), [GIST](https://github.com/gitpitch/gitpitch/wiki/GIST-Slides) 
-- [Custom CSS Styling](https://github.com/gitpitch/gitpitch/wiki/Slideshow-Custom-CSS)
-- [Slideshow Background Image](https://github.com/gitpitch/gitpitch/wiki/Background-Setting)
-- [Slide-specific Background Images](https://github.com/gitpitch/gitpitch/wiki/Image-Slides#background)
-- [Custom Logo](https://github.com/gitpitch/gitpitch/wiki/Logo-Setting), [TOC](https://github.com/gitpitch/gitpitch/wiki/Table-of-Contents), and [Footnotes](https://github.com/gitpitch/gitpitch/wiki/Footnote-Setting)
+Gemsets to wydzielone przestrzenie do instalacji gemów. W zależności od tego, nad jakim projektem aktualnie pracujemy, ustawiamy wersję Ruby i przestrzeń z której będziemy używać Gemów.
 
-Note:
+.ruby-gemset
+```bash
+ruby-training
+```
 
-Let your audience know where they can find additional
-help.
-
-And where they can find your presentaton slides,
-online @ [GitPitch.com](https://gitpitch.com) :)
+.ruby-version
+```bash
+2.4.0
+```
 
 ---
 
-### Template Versions
+#### Spróbujmy Vagranta
 
-- #### [Base Template  @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/netflix)
-- #### [Code Maximized @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/netflix?p=codemax)
-- #### [Speaker Notes @fa[external-link gp-download]](https://gitpitch.com/gitpitch/templates/netflix?p=speaker)
+- https://www.vagrantup.com/downloads.html |
+- https://www.virtualbox.org/wiki/Downloads |
+- https://github.com/mbilski3/ruby-training-template |
 
-Note:
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/Vagrantfile&lang=ruby&title=Vagrantfile
 
-You can use the links on this slide to explore alternate
-versions of this template. 
+@[54-65](Konfiguracja)
+@[1-10](Niezbędne biblioteki programisty)
+@[11-14](RVM)
+@[16-17](--no-ri --no-rdoc)
+@[19-29](Instalacja ruby i ustawianie gemseta)
+@[31-38](Gemy)
+@[45-51](Bundle install i stop - start servera thin)
+
+---?image=assets/image/dirs.jpg&size=contain
 
 ---
 
-### Questions?
+#### Aplikacje Rack-based
+
+https://rack.github.io/
+
+- Rack jest interfejsem między webserverem a kodem ruby |
+- config.ru |
+- rackup - domyślnie używa webrick-a (my zastąpimy thin) |
+
+---
+
+#### Bundler i Gemfile
+
+- touch Gemfile |
+- gem install bundler |
+- bundle install |
+
+---
+
+#### Gemfile, rubygems, groups
+
+- source rubygems |
+- gem 'sinatra' |
+- można zainstalować konkretną wersję, jak w package.json |
+- tak samo w package.json groups, np: development |
+
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/Gemfile&lang=ruby&title=Gemfile
+
+@[1](source)
+@[3-7](gemy używane zawsze)
+@[9-16](gemy tylko development)
+
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/app.rb&lang=ruby&title=app.rb
+
+@[1-3](bundler)
+
+---?code=src/sinatra.rb&lang=ruby&title=sinatra.rb
+
+---
+
+#### MVC - krótkie omówienie
+
+- Małe aplikacje - jeden plik, DSL, bez otwierania klas. Jest to po prostu użycie metod (get, post, delete) z "głównego" obieku ruby |
+- Duże aplikacje - proponuję stosować MVC i mechanizmy obiektowości, by mieć izolację od poszczególnych elementów aplikacji (konfig, requiry, kod, routesy) |
+- W tym celu katalogi MVC + helpers |
+
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/app.rb&lang=ruby&title=app.rb
+
+@[5-10](require)
+
+---?image=assets/image/routes.jpg&size=contain
+
+---?image=assets/image/routes1.jpg&size=contain
+
+---?image=assets/image/routes2.jpg&size=contain
+
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/lib/controllers/base_controller.rb&lang=ruby&title=base_controller.rb
+
+@[2-7](development)
+@[9-33](overall)
+@[35](helpers)
+
+---
+
+#### HAML i layouts
+
+- gem 'haml' |
+- haml :index |
+- default layout: views/layout.haml |
+- set :haml, layout: 'layouts/layout'.to_sym |
+
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/lib/controllers/main_controller.rb&lang=ruby&title=main_controller.rb
+
+@[4-7](render haml)
+@[2](set layout)
+
+---
+
+#### HAML
+
+- wcięcia |
+- brak domknięć |
+- element: %div |
+- klasa: .class |
+- id: #id |
+- domyślny element: div, np: .class#id |
+
+---
+
+#### HAML
+
+- atrybut: %html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en") |
+- ruby: %a(title=@title href=href) Stuff |
+- inne ruby (preferowane): %a{title: @title, href: href} Stuff |
+- zmienne z @ działają bez ich przekazywania (binding) |
+- przekazywanie zmiennych bez @: haml :index, locals: {x: 5} |
+- i wtedy używanie bez @ |
+
+---
+
+#### HAML
+
+- wypisanie zmiennej: = @title |
+- NALEŻY używać helperów |
+- partial: = haml :partial |
+- operacje ruby bez wypisywania: - x = 5 |
+---
+
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/lib/views/index.haml&lang=haml&title=index.haml
+
+@[9-12](form haml)
+
+---
+
+#### Debugowanie
+
+- ruby-debugger gem - ale potrzebuje IDE, np RubyMine (niewygodnie) |
+- puts |
+- byebug |
+- racksh |
+- better_errors |
+- binding_of_caller |
+
+---?image=assets/image/better_errors.jpg&size=contain
+
+---?image=assets/image/byebug.jpg&size=contain
+
+---?image=assets/image/racksh.jpg&size=contain
+
+---
+
+
+### Pytania?
 
 <br>
 
-@fa[twitter gp-contact](@gitpitch)
+@fa[github gp-contact](mbilski3)
 
-@fa[github gp-contact](gitpitch)
-
-@fa[medium gp-contact](@gitpitch)
-
-Note:
-
-Encourage questions, it's a great opportunity to
-learn from your audience.
-
----?image=assets/image/gitpitch-audience.jpg
-
-@title[Download this Template!]
-
-### Get your presentation started!
-### [Download this template @fa[external-link gp-download]](https://gitpitch.com/template/download/netflix)
-
-Note:
-
-Now it's your turn. The fastest way from idea to presentation
-is to download a GitPitch presentation template. Visit the
-Template Gallery [here](https://gitpitch.com/templates.html).
-
+@fa[envelope gp-contact](mbilski3@gmail.com)
