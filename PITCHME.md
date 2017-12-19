@@ -156,6 +156,13 @@ https://rack.github.io/
 
 ---?image=assets/image/routes2.jpg&size=contain
 
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/lib/controllers/base_controller.rb&lang=ruby&title=base_controller.rb
+
+@[2-7](development)
+@[9-33](overall)
+@[35](helpers)
+
+
 ---
 
 ### Pytania?
