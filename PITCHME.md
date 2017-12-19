@@ -47,17 +47,17 @@ RVM - Ruby Version Manager, narzędzie linii komend do zarządzania wersjami Rub
 
 https://rvm.io/
 
-`gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB` |
+`gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB`
 
-`\curl -sSL https://get.rvm.io | bash -s stable` |
+`\curl -sSL https://get.rvm.io | bash -s stable`
 
-`rvm install 2.4.0` |
+`rvm install 2.4.0`
 
 ---
 
 #### RVM - gemsets automat
 
-Gemsets to wydzielone przestrzenie do instalacji gemów. W zależności od tego, nad jakim projektem aktualnie pracujemy, ustawiamy wersję Ruby i przestrzeń z której będziemy używać Gemów.
+Gemsets to wydzielone przestrzenie do instalacji gemów. W zależności od tego, nad jakim projektem aktualnie pracujemy, ustawiamy wersję Ruby i przestrzeń z której będziemy używać Gemów. Mając poniższe dwa pliki zostaniemy automatycznie przełączeni między gemsetami i wersjami ruby.
 
 .ruby-gemset
 ```
@@ -68,8 +68,6 @@ ruby-training
 ```
 2.4.0
 ```
-
-
 
 
 ---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/Vagrantfile&lang=ruby&title=Vagrantfile
