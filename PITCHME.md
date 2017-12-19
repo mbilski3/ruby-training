@@ -17,6 +17,11 @@
 - Vagrant - Szybki provisioning i pierwsza appka |
 - Aplikacje rack-based, jak je traktować? |
 - Bundler i Gemfile, co to są? |
+
+---
+
+## Dowiecie się c.d:
+
 - Jak zrobić sobie MVC w Sinatra? |
 - Routing w Sinatra |
 - BaseController - Co powinno się w nim znaleźć? |
