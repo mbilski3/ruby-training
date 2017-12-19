@@ -48,17 +48,17 @@ RVM - Ruby Version Manager, narzędzie linii komend do zarządzania wersjami Rub
 https://rvm.io/
 
 Dodajemy klucze
-```
+```bash
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 ```
 
 Pobieramy i uruchamiamy skrypt instalacyjny
-```
+```bash
 \curl -sSL https://get.rvm.io | bash -s stable
 ```
 
 Instalujemy wybraną wersję
-```
+```bash
 rvm install 2.4.0
 ```
 
@@ -69,12 +69,12 @@ rvm install 2.4.0
 Gemsets to wydzielone przestrzenie do instalacji gemów. W zależności od tego, nad jakim projektem aktualnie pracujemy, ustawiamy wersję Ruby i przestrzeń z której będziemy używać Gemów.
 
 .ruby-gemset
-```
+```bash
 ruby-training
 ```
 
 .ruby-version
-```
+```bash
 2.4.0
 ```
 
