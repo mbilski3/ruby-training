@@ -10,16 +10,28 @@
 
 ---
 
+## Decyzja na początek:
+
+[I'm an inline-style link](#/5)
+
+## CZY
+
+[I'm an inline-style link](#/6)
+
+---
+
 ## Tabela kontentu
 
 - Jak poprawnie zainstalować i skonfigurować środowisko programisty? |
+- Rvm, gemsets, przełączanie między wersjami
 - Vagrant - Szybki provisioning i pierwsza appka |
-- Custom CSS Styling |
+- Aplikacje rack-based |
+- Bundler i Gemfile, co to są? |
 - Slideshow Background Image |
 - Slide-specific Background Images |
 - Custom Logo, TOC, and Footnotes |
 
----?code=src/go/server.go&lang=golang&title=Golang File
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/Vagrantfile&lang=ruby&title=Vagrantfile File
 
 @[1,3-6](Present code found within any repo source file.)
 @[8-18](Without ever leaving your slideshow.)
