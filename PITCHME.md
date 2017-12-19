@@ -98,7 +98,7 @@ ruby-training
 
 ---?image=assets/image/dirs.jpg&size=20%
 
-#### Struktura projektu (może się różnić)
+Struktura projektu (może się różnić)
 
 ---
 
