@@ -214,6 +214,23 @@ https://rack.github.io/
 
 ---
 
+#### Debugowanie
+
+- ruby-debugger gem - ale potrzebuje IDE, np RubyMine (niewygodnie) |
+- puts |
+- byebug |
+- racksh |
+- better_errors |
+- binding_of_caller |
+
+---?image=assets/image/better_errors.jpg&size=contain
+
+---?image=assets/image/byebug.jpg&size=contain
+
+---?image=assets/image/racksh.jpg&size=contain
+
+---
+
 
 ### Pytania?
 
