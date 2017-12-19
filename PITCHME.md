@@ -8,8 +8,6 @@
 
 ![](https://ljdchost.com/OpJjQlm.gif "Ready for this? Thus...")
 
-Note:
-xD
 ---
 
 ## Dowiecie się:
@@ -21,8 +19,6 @@ xD
 - Bundler i Gemfile, co to są? |
 - Jak zrobić sobie MVC w Sinatra? |
 
-Note:
-sdfsdfsdfsdf
 ---
 
 ## Dowiecie się c.d:
@@ -46,6 +42,8 @@ RVM - Ruby Version Manager, narzędzie linii komend do zarządzania wersjami Rub
 - Co jeśli mamy projekt X który wymaga Ruby 1.9.3 i projekt Y który wymaga 2.4? |
 - Projekt X potrzebuje gema Rails w wersji 3, projekt Y potrzebuje go w wersji 5? |
 
+Note:
+Powiedzieć o windowsie, że albo cygwin, ubuntu console
 ---
 
 #### RVM
@@ -66,7 +64,9 @@ Instalujemy wybraną wersję
 ```bash
 rvm install 2.4.0
 ```
-
+Note:
+W międzyczasie jeszcze musimy zrobić restart konsoli lub dodać source!!!
+rvm list known itd
 ---
 
 #### RVM - gemsets automat
@@ -82,6 +82,9 @@ ruby-training
 ```bash
 2.4.0
 ```
+Note:
+rvm gemset list
+rvm gemset create teddy
 
 ---
 
@@ -113,6 +116,8 @@ https://rack.github.io/
 - config.ru |
 - rackup - domyślnie używa webrick-a (my zastąpimy thin) |
 
+Note:
+Wspomnieć dlaczego my w projekcie nie używamy rackup
 ---
 
 #### Bundler i Gemfile
