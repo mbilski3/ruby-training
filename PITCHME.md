@@ -8,6 +8,8 @@
 
 ![](https://ljdchost.com/OpJjQlm.gif "Ready for this? Thus...")
 
+Note:
+xD
 ---
 
 ## Dowiecie się:
@@ -19,6 +21,8 @@
 - Bundler i Gemfile, co to są? |
 - Jak zrobić sobie MVC w Sinatra? |
 
+Note:
+sdfsdfsdfsdf
 ---
 
 ## Dowiecie się c.d:
