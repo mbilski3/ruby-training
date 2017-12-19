@@ -10,28 +10,21 @@
 
 ---
 
-## Decyzja na początek:
-
-[I'm an inline-style link](#/5)
-
-## CZY
-
-[I'm an inline-style link](#/6)
-
----
-
-## Tabela kontentu
+## Dowiecie się:
 
 - Jak poprawnie zainstalować i skonfigurować środowisko programisty? |
 - Rvm, gemsets, przełączanie między wersjami |
 - Vagrant - Szybki provisioning i pierwsza appka |
-- Aplikacje rack-based |
+- Aplikacje rack-based, jak je traktować? |
 - Bundler i Gemfile, co to są? |
-- Slideshow Background Image |
-- Slide-specific Background Images |
-- Custom Logo, TOC, and Footnotes |
+- Jak zrobić sobie MVC w Sinatra? |
+- Routing w Sinatra |
+- BaseController - Co powinno się w nim znaleźć? |
+- Layouty, HAML i helpery |
+- Przekazywanie zmiennych do widoków |
+- Params - query strings, body, jak je ugryźć? |
 
----?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/Vagrantfile&lang=ruby&title=Vagrantfile File
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/Vagrantfile&lang=ruby&title=Vagrantfile
 
 @[51-62](Konfiguracja)
 @[1-10](Niezbędne biblioteki programisty)
