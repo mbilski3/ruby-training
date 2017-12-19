@@ -17,17 +17,18 @@
 - Vagrant - Szybki provisioning i pierwsza appka |
 - Aplikacje rack-based, jak je traktować? |
 - Bundler i Gemfile, co to są? |
+- Jak zrobić sobie MVC w Sinatra? |
 
 ---
 
 ## Dowiecie się c.d:
 
-- Jak zrobić sobie MVC w Sinatra? |
 - Routing w Sinatra |
 - BaseController - Co powinno się w nim znaleźć? |
 - Layouty, HAML i helpery |
 - Przekazywanie zmiennych do widoków |
 - Params - query strings, body, jak je ugryźć? |
+- Debugowanie |
 
 ---
 
@@ -148,6 +149,8 @@ https://rack.github.io/
 ---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/app.rb&lang=ruby&title=app.rb
 
 @[5-10](require)
+
+---?image=assets/image/routes.jpg&size=contain
 
 ---
 
