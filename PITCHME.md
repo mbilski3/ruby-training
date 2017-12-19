@@ -99,15 +99,13 @@ http.createServer(function (request, response) {
 
 ---
 
-### Questions?
+### Pytania?
 
 <br>
 
-@fa[twitter gp-contact](@gitpitch)
+@fa[github gp-contact](mbilski3)
 
-@fa[github gp-contact](gitpitch)
-
-@fa[medium gp-contact](@gitpitch)
+@fa[envelope gp-contact](mbilski3@gmail.com)
 
 ---?image=assets/image/gitpitch-audience.jpg
 
