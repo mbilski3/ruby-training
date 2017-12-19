@@ -27,7 +27,7 @@
 - BaseController - Co powinno się w nim znaleźć? |
 - Layouty, HAML i helpery |
 - Przekazywanie zmiennych do widoków |
-- Params - query strings, body, jak je ugryźć? |
+- Formularze i CSRF |
 - Debugowanie |
 
 ---
@@ -162,8 +162,58 @@ https://rack.github.io/
 @[9-33](overall)
 @[35](helpers)
 
+---
+
+#### HAML i layouts
+
+- gem 'haml' |
+- haml :index |
+- default layout: views/layout.haml |
+- set :haml, layout: 'layouts/layout'.to_sym |
+
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/lib/controllers/base_controller.rb&lang=ruby&title=main_controller.rb
+
+@[4-7](render haml)
+@[2](set layout)
 
 ---
+
+#### HAML
+
+- wcięcia |
+- brak domknięć |
+- element: %div |
+- klasa: .class |
+- id: #id |
+- domyślny element: div, np: .class#id |
+
+---
+
+#### HAML
+
+- atrybut: %html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en") |
+- ruby: %a(title=@title href=href) Stuff |
+- inne ruby (preferowane): %a{title: @title, href: href} Stuff |
+- zmienne z @ działają bez ich przekazywania (binding) |
+- przekazywanie zmiennych bez @: haml :index, locals: {x: 5} |
+- i wtedy używanie bez @ |
+
+---
+
+#### HAML
+
+- wypisanie zmiennej: = @title |
+- NALEŻY używać helperów |
+- partial: = haml :partial |
+- operacje ruby bez wypisywania: - x = 5 |
+---
+
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/lib/views/index.haml&lang=haml&title=index.haml
+
+@[9-12](form haml)
+
+---
+
 
 ### Pytania?
 
