@@ -137,7 +137,7 @@ https://rack.github.io/
 - source rubygems |
 - gem 'sinatra' |
 - można zainstalować konkretną wersję, jak w package.json |
-- tak samo w package.json groups, np: development
+- tak samo w package.json groups, np: development |
 
 ---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/Gemfile&lang=ruby&title=Gemfile
 
@@ -148,6 +148,20 @@ https://rack.github.io/
 ---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/app.rb&lang=ruby&title=app.rb
 
 @[1-3](bundler)
+
+---?code=src/sinatra.rb&lang=ruby&title=sinatra.rb
+
+---
+
+#### MVC - krótkie omówienie
+
+- Małe aplikacje - jeden plik, DSL, bez otwierania klas. Jest to po prostu użycie metod (get, post, delete) z "głównego" obieku ruby |
+- Duże aplikacje - proponuję stosować MVC i mechanizmy obiektowości, by mieć izolację od poszczególnych elementów aplikacji (konfig, requiry, kod, routesy) |
+- W tym celu katalogi MVC + helpers |
+
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/app.rb&lang=ruby&title=app.rb
+
+@[5-10](require)
 
 ---
 
