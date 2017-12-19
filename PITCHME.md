@@ -88,13 +88,13 @@ ruby-training
 
 ---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/Vagrantfile&lang=ruby&title=Vagrantfile
 
-@[51-62](Konfiguracja)
+@[54-65](Konfiguracja)
 @[1-10](Niezbędne biblioteki programisty)
 @[11-14](RVM)
 @[16-17](--no-ri --no-rdoc)
 @[19-29](Instalacja ruby i ustawianie gemseta)
 @[31-38](Gemy)
-@[42-48](Bundle install i stop - start servera thin)
+@[45-51](Bundle install i stop - start servera thin)
 
 ---?image=assets/image/dirs.jpg&size=20%
 
