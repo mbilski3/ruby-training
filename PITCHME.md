@@ -78,6 +78,13 @@ ruby-training
 2.4.0
 ```
 
+---
+
+#### Spróbujmy Vagranta
+
+- https://www.vagrantup.com/downloads.html |
+- https://www.virtualbox.org/wiki/Downloads |
+- https://github.com/mbilski3/ruby-training-template |
 
 ---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/Vagrantfile&lang=ruby&title=Vagrantfile
 
