@@ -23,7 +23,7 @@
 ## Tabela kontentu
 
 - Jak poprawnie zainstalować i skonfigurować środowisko programisty? |
-- Rvm, gemsets, przełączanie między wersjami
+- Rvm, gemsets, przełączanie między wersjami |
 - Vagrant - Szybki provisioning i pierwsza appka |
 - Aplikacje rack-based |
 - Bundler i Gemfile, co to są? |
@@ -33,9 +33,13 @@
 
 ---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/Vagrantfile&lang=ruby&title=Vagrantfile File
 
-@[1,3-6](Present code found within any repo source file.)
-@[8-18](Without ever leaving your slideshow.)
-@[19-28](Using GitPitch code-presenting with (optional) annotations.)
+@[51-62](Konfiguracja)
+@[1-10](Niezbędne biblioteki programisty)
+@[11-14](RVM)
+@[16-17](--no-ri --no-rdoc)
+@[19-29](Instalacja ruby i ustawianie gemseta)
+@[31-38](Gemy)
+@[42-48](Bundle install i stop - start servera thin)
 
 ---
 
