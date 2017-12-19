@@ -98,6 +98,12 @@ ruby-training
 
 ---
 
+#### Struktura projektu (może się różnić)
+
+![dirs](assets/image/dirs.jpg)
+
+---
+
 ### Pytania?
 
 <br>
