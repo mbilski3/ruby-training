@@ -96,21 +96,7 @@ ruby-training
 @[31-38](Gemy)
 @[45-51](Bundle install i stop - start servera thin)
 
----?image=assets/image/dirs.jpg&size=20%
-
-Struktura projektu (może się różnić)
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+---?image=assets/image/dirs.jpg&size=contain
 
 ---
 
