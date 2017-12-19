@@ -66,7 +66,7 @@ rvm install 2.4.0
 
 #### RVM - gemsets automat
 
-Gemsets to wydzielone przestrzenie do instalacji gemów. W zależności od tego, nad jakim projektem aktualnie pracujemy, ustawiamy wersję Ruby i przestrzeń z której będziemy używać Gemów. Mając poniższe dwa pliki zostaniemy automatycznie przełączeni między gemsetami i wersjami ruby.
+Gemsets to wydzielone przestrzenie do instalacji gemów. W zależności od tego, nad jakim projektem aktualnie pracujemy, ustawiamy wersję Ruby i przestrzeń z której będziemy używać Gemów.
 
 .ruby-gemset
 ```
