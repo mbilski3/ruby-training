@@ -114,6 +114,43 @@ Struktura projektu (może się różnić)
 
 ---
 
+#### Aplikacje Rack-based
+
+https://rack.github.io/
+
+- Rack jest interfejsem między webserverem a kodem ruby |
+- config.ru |
+- rackup - domyślnie używa webrick-a (my zastąpimy thin) |
+
+---
+
+#### Bundler i Gemfile
+
+- touch Gemfile |
+- gem install bundler |
+- bundle install |
+
+---
+
+#### Gemfile, rubygems, groups
+
+- source rubygems |
+- gem 'sinatra' |
+- można zainstalować konkretną wersję, jak w package.json |
+- tak samo w package.json groups, np: development
+
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/Gemfile&lang=ruby&title=Gemfile
+
+@[1](source)
+@[3-7](gemy używane zawsze)
+@[9-16](gemy tylko development)
+
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/app.rb&lang=ruby&title=app.rb
+
+@[1-3](bundler)
+
+---
+
 ### Pytania?
 
 <br>
