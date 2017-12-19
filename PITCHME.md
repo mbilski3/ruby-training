@@ -171,7 +171,7 @@ https://rack.github.io/
 - default layout: views/layout.haml |
 - set :haml, layout: 'layouts/layout'.to_sym |
 
----?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/lib/controllers/base_controller.rb&lang=ruby&title=main_controller.rb
+---?code=https://raw.githubusercontent.com/mbilski3/ruby-training-template/master/lib/controllers/main_controller.rb&lang=ruby&title=main_controller.rb
 
 @[4-7](render haml)
 @[2](set layout)
